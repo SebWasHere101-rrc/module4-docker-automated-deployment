@@ -1,0 +1,20 @@
+services:
+  studentportfolio:
+    build: ./Studentportfoliotemplate
+    image: studentportfolio:latest
+    ports:
+      - "3000:80"
+    networks:
+      - prf-network
+
+  bankingapp:
+    build: ./BankingApp
+    image: bankingapp:latest
+    ports:
+      - "5090:5090"
+    networks:
+      - prf-network
+
+networks:
+  prf-network:
+    external: true

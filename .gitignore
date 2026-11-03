@@ -1,0 +1,20 @@
+# Vagrant virtual machine files
+.vagrant/
+
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Temporary editor files
+*.swp
+*.swo
+*~
+
+# System files
+.DS_Store
+Thumbs.db
